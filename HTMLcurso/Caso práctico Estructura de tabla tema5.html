@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Estructura típica de tabla</title>
+    <link rel="stylesheet" href="css/estilos-de-tabla.css">
+</head>
+<body>
+
+    <section class="table">
+    <table>
+            <caption> Precios de las naranjas </caption>
+            <tr>
+                <th rowspan="4"> Datos analizados </th>
+                <th>Provincia</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td> Málaga </td>
+                <td> 0,54 $ </td>
+            </tr>
+            <tr>
+                <td>Granada</td>
+                <td>0,45 $</td>
+            </tr>
+        <tr>
+            <th> Promedio</tf>
+            <th> 0,5$ </tf>
+        </tr>
+        </table>
+    </section>
+
+
+        <form action="proceso.php" method="post">
+            <p> Nombre:<input type="text" name="nombre" style="color:gray" placeholder="Tu nombre"></p>                 
+            <p> Contraseña <input type="password" name ="Contraseña" size="22"> </p>
+            <p> Comentario </p>
+            <textarea name="comentario" rows="4" cols="27" placeholder="Ingrese su comentario"></textarea> <br>
+            <b> Tienes alguna discapacidad? </b>
+            <p> <input type="checkbox" checked name="Opción 1"> Invalid? </p>
+
+        <p>
+            <input type="radio" name="sexo" value="H">Hombre
+            <input type="radio" name="sexo" value="M">Mujer  
+            <p> Opciones a elegir: </p>   
+            <select name="options" size="3">
+                <option value="1"> Хуй перепердуй </option>
+                <option value="2"> Ебало в кипяток </option>
+                <option value="3"> Гавно Гав </option>
+                <option value="4"> Ямочка в уздечке</option>
+            </select>
+        </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+            <input type="button" value="Hola Mundo" onclick="alert('Hola Mundo!')">
+        </form>
+
+
+</body>
+</html>

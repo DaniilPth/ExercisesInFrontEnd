@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/styles" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de viajes</title>
+</head>
+<body>
+    <header>
+        <nav class="nap-navegador">   
+            <img src="https://publicidadrayo.com/tportal/wp-content/uploads/2020/11/cropped-logo-travelportal-agencia.png" name="logo" width="250px"> 
+            <blockquote> 
+            <a href="#datospersonales" target="_self"> <h2> Datos Personales </h2>  </a>
+            <a href="#hoteles" target="_self"> <h2>Hoteles</h2> </a>
+            <a href="#espacios" target="_self" > <h2>Espacios </h2> </a>
+            <a href="#ofertas" target="_self" > <h2>Ofertas y experiencias </h2></a>
+            <a href="#spa" target="_self" > <h2> Músical SPA </h2></a>
+            <a href="#lugares" target="_self" > <h2>Lugares de interés </h2></a>
+            </blockquote>
+        </nav>
+    </header>
+    <main>
+
+
+
+        <section id="datospersonales">
+                <fieldset>
+                    <legend><h1> Datos personales</h1></legend>
+                    <form action="proceso.php" method="post">
+                        <pre>Nombre:            <input type="text" name="nombre" placeholder="Ingrese su nombre" size="25"> </pre>
+                        <pre>Apellido :         <input type="text" placeholder="Su apellido" size="25"></pre>
+                        <pre>Fecha de nacimiento:<input type="date"></pre>
+                        <pre>Correo Electrónico: <input type="email"></pre>
+                        <p> Sexo: <input type="radio" name="sexo" value="H"> H <input type="radio" name="sexo" value="M"> M </p>
+                        <p>Quieres que te enviemos <b>publicidad</b>? <input type="checkbox" checked name="option"></p>
+                </fieldset>
+        </section>
+
+
+
+
+        <section id="hoteles">
+    <fieldset>
+        <legend><h1>Tematicas y mes de vacaciones</h1></legend>
+        <select type="options" size="1">
+            <option value="1"> Hotel Sirius</option>
+            <option value="2"> Hotel Aquamarine </option>
+            <option value="3"> Hotel Marta</option>
+        </select> <br><br>
+        <input type="radio" name="mes1">Agosto 
+        <input type="radio" name="mes2">Julio
+        <input type="radio" name="mes3">Junio
+    </fieldset> 
+        </section>
+
+        <section id="consulta">
+    <fieldset>
+        <legend><h1>Consulta y regalo</h1></legend>
+        <textarea name="consulta" cols="100" rows="5"> </textarea>
+        <p> Fecha: <input type="date" name="fecha"></p> 
+        <p> Rango de precios (1000$ - 5000$): <input type="range" min="1000" max="5000" step="100"></p>
+        <p> ¿De qué color quieres el regalo? <input type="color"></p>
+        <p> La ocupación del hotel: <progress name="progresso" max="100" value="49"> </p>
+
+        </fieldset>
+    </section>
+    <hr>
+    
+    <div class="button-container">
+        <span id="color">Enviar</span>
+        <span>Cancelar</span>
+    </div>
+    <hr>
+</form>
+    
+    <section class="espacios">
+         <h1> Comodidades</h1>
+        <article class="black-space">
+                <h3> Grán Pescina en la segunda planta</h3>
+                
+            <p><b> Piscina Nova</b></p>
+            <p> Discripción: Para 10 personas tal tal tal </p>
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/01/20/d9/75/piscina-y-terraza-en.jpg" alt="Nova" width="500">
+        </article>
+        
+        <article>
+            <h3> El bar "Blue" </h3>
+            <p> Descripción: 30 bebidas tales tales y tales </p>
+            <img src="https://imagenes.elpais.com/resizer/szigHMlde1bgtPU7FDLS7frGos4=/1200x0/filters:focal(2393x1160:2403x1170)/cloudfront-eu-central-1.images.arcpublishing.com/prisa/UBQGGY25OFCOJKLMELXXRKLF3A.jpg" alt="Blue" width="500">
+        </article>
+    </section>
+
+    <section id="ofertas">
+        <h2> Ofertas y experiencias </h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/B2sLnh8VVv8?si=H3PL5BDxB73pEgSY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>  
+        </iframe>
+    </section>
+
+
+    <aside id="lugares" >
+        <h3> Publicidad </h3>
+        <a href="https://diariodealicante.net/">
+        <img src="https://s1.ppllstatics.com/starfish/latest/assets/images/logos/logo-todoalicante.svg" alt="Todo Alicante" width="498"> 
+        <h1>La mapa de Alicante</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!
+            1m3!1d100115.60467932465!2d-0.5549257055011738!
+            3d38.35794658054341!2m3!1f0!2f0!3f0!3m2!1i1024!
+            2i768!4f13.1!3m3!1m2!1s0xd6235da3b9dab4b%3A0x1d7da872ac0b81e3!
+            2sAlicante%20(Alacant)%2C%20Alicante!5e0!3m2!1ses!2ses!
+            4v1698414284462!5m2!1ses!2ses" width="600" height="450" style="border:10;" allowfullscreen="" loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </a>   
+    </aside>
+    
+    <section id="spa">
+        <article>
+            <h1> Música que participado en la creación </h1>
+            <audio src="images/lilbubblegum-af1-Lyrics-_6.mp3" controls preload loop type="audio/mpeg"> </audio>
+        </article>
+    </section>
+
+
+    <section id="destinos">
+
+    <h4 class="table-title"> Destinos Frecuentes </h4>
+
+    <table class="style-table">
+        <thead>
+            <th>Origen</th>
+            <th>Destino</th>
+            <th class="price">Precio medio</th>
+        </thead>
+
+        <tr>
+            <th>Madrid</th>
+            <th>Eindhoven</th>
+            <th class="price">120,08$</th>
+        </tr>
+
+        <tr>
+            <th>Palma de Mallorca</th>
+            <th>Marsella</th>
+            <th class="price">137,02$</th>
+        </tr>
+
+        <tr>
+            <th>Gran Canaria</th>
+            <th>Oslo</th>
+            <th class="price">156,7$</th>
+        </tr>
+
+        <tr>
+            <th>Barcelona</th>
+            <th>Lyon</th>
+            <th class="price">90,34$</th>
+        </tr>
+
+
+    </table>
+
+    </section>
+
+    </main>     
+    <footer class="footer">
+        <p>
+            <a href="cookies.html"> Política de Cookies </a>
+             Avisos Legales 
+            <a href="denyelwas@gmail.com"> Denyelwas@gmail.com </a>
+             Quejas? Admito todos. 
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

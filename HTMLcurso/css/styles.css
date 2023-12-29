@@ -1,0 +1,178 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: forestgreen; */
+    text-decoration: none;
+
+}
+
+main{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 1368px;
+    
+}
+.nap-navegador{
+    width: 90%;
+    max-width: 1368px;
+    margin: 0 auto;
+}
+.nap-navegador > blockquote {
+    display: flex;
+    flex-flow: row nowrap;
+} 
+.nap-navegador > blockquote > a {
+    text-transform: uppercase; 
+    margin-right: 40px; 
+    text-decoration: none;
+    font-size: 12px;
+    color:black;
+    transition: 10s ease all;
+}
+.nap-navegador > blockquote > a:hover {
+    text-decoration: none; 
+    color:red;
+    transition: 0.3s ease all;
+}
+header{ 
+    /* z-index: 1; */
+     background-color: rgb(53, 204, 189);
+    
+}
+
+section{
+    background-color: rgb(252, 252, 252); 
+}
+    
+section > fieldset {
+    color:rgb(7, 3, 3); 
+}   
+.espacios {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:161%;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: bold;
+}
+.black-space {
+    width: 100%;
+}
+.espacios:link {
+    top: 10px;
+    left: 20rem;
+    color: #ecbebe;
+    transition: 0.3s ease all;
+    text-align: center;
+}
+.espacios:hover {
+        top: 10px;
+        left: 20rem;
+        color: #74139b;
+        transition: 1s ease all;
+}
+
+.button-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+}
+.button-container > span{
+    background-color: red;
+    color: #fff;
+    padding: 12px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 1s ease all;
+    
+}
+.button-container > span:nth-child(1){
+   margin-right: 10px;
+   background-color: blue;
+}
+.button-container > span:hover{
+    background-color: #342;
+    transition: 1s ease all;
+}   
+
+#ofertas {
+    text-align: center;
+    padding: 20px 20px;
+    border: #2e9b13 solid 2px;
+    border-radius: 20px;
+    width: 100%;
+}
+#ofertas > h2 {
+    border-bottom: solid black 1px;
+    font-weight: bold;
+    color:aqua;
+    margin-bottom: 30px;
+}
+
+#destinos {
+    text-align: center;
+
+
+}
+
+.table-title{
+    font-size: 35px;
+    color: blue;
+    letter-spacing: 10;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.style-table{
+    margin: 20px auto;
+    width: 100%;
+    max-width: 50%;
+    border: 2px solid #000;
+    font-size: 22px;
+    text-align: left;
+    border-collapse: none;
+   
+
+}
+
+.style-table > tr{
+    border: 1px solid transparent;
+}
+.style-table > tr:hover{
+    background-color: grey;
+}
+.style-table  tr:nth-child(even) {background: #818181}
+.style-table  tr:nth-child(odd) {background: #FFF}
+
+
+.style-table  thead > tr:first-child{
+    background-color: green;
+
+    color: #fff;
+}
+th.price{
+    text-align: right;
+    border: 1px solid transparent;
+}
+
+
+
+
+
+
+footer{  
+    min-width: 100%;
+    padding:  30px 0;
+    color: #fff;
+    background-color: #000;
+}
+footer > p > a { 
+    color: #fff;
+    text-decoration: underline;
+}
+footer > p{
+    text-align: center;
+}
